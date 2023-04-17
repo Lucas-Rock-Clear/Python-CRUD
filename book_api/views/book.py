@@ -29,7 +29,7 @@ class BookViewSet(viewsets.ModelViewSet):
                 },
             )
         },
-    )
+    ) 
     @action(detail=True, methods=['GET'], url_path='author')
     def get_author(self, request, pk=None):
         book = self.get_object()
